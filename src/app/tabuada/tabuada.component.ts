@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabuadaComponent implements OnInit {
 
-  constructor() { }
+  tbd: number;
 
-  ngOnInit() {
+  constructor() {
+    this.tbd = 5;
   }
 
-}
+  getTabuada() {
+    return this.tbd;
+  }
+
+  getTabuadaList() {
+    let list: number[] = [];
+
+    for (let i = 1; i<= 10; i++) list.push(this.getTabuada());
+    
+    return list;
+  }
+  
+  ngOnInit() {}
+
+} 

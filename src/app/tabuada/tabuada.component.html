@@ -1,0 +1,18 @@
+<div class="container-fluid">
+
+<table class="table">
+  <thead>        
+    <tr>
+      <th>Número |</th>
+      <th>Multiplicador |</th>
+      <th>Resultado</th>    
+    </tr>
+    <tr *ngFor="let item of getTabuadaList(); index as i">
+      <td>{{item}}</td>
+      <td>{{i+1}}</td>
+      <td>{{item * (i+1)}}</td>
+    </tr>
+  </thead>
+</table>
+
+</div>
