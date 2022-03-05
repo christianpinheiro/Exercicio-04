@@ -21,7 +21,7 @@ import { TabuadaComponent } from './tabuada/tabuada.component';
 
     ])
   ],
-  declarations: [ AppComponent, HelloComponent ],
+  declarations: [ AppComponent, HelloComponent, HomeComponent, SobreComponent, TabuadaComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
